@@ -4,6 +4,11 @@
 <!-- |    EDITING THIS FILE BY HAND IS NOT RECOMMENDED                                 | -->
 <!-- =================================================================================== -->
 <robot name="openarmx">
+  <!-- <xacro:arg name="right_arm_base_xyz" default="0.0 -0.031 0.698" />
+  <xacro:arg name="right_arm_base_rpy" default="1.5708 0 0" />
+
+  <xacro:arg name="left_arm_base_xyz" default="0.0 0.031 0.698" />
+  <xacro:arg name="left_arm_base_rpy" default="-1.5708 0 0" /> -->
   <!-- Is the robot being simulated in gazebo? -->
   <!-- <xacro:arg name="gazebo" default="false" /> -->
   <link name="world"/>
@@ -16,13 +21,13 @@
     <visual name="openarmx_body_link0_visual">
       <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="package://openarmx_description/meshes/body/v10/visual/body_link0.dae" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://openarmx_description/meshes/body/v10/visual/body_link0.dae" scale="1.0 1.0 1.0"/>
       </geometry>
     </visual>
     <collision name="openarmx_body_link0_collision">
       <origin rpy="0.0 0.0 0.0" xyz="0.0 0.0 0.0"/>
       <geometry>
-        <mesh filename="package://openarmx_description/meshes/body/v10/collision/body_link0_symp.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="package://openarmx_description/meshes/body/v10/collision/body_link0_symp.stl" scale="1.0 1.0 1.0"/>
         <!-- <mesh filename="package://openarmx_description/meshes/arm/${arm_type}/collision/${name}.stl" scale="0.001 0.001 0.001" /> -->
       </geometry>
     </collision>
@@ -35,7 +40,7 @@
   <joint name="openarmx_left_openarmx_body_link0_joint" type="fixed">
     <parent link="openarmx_body_link0"/>
     <child link="openarmx_left_link0"/>
-    <origin rpy="-1.5708 0 0" xyz="0.0 0.031 0.698"/>
+    <origin rpy="-1.5708 0 0" xyz="0.0 0.031 0.735"/>
   </joint>
   <link name="openarmx_left_link0">
     <visual name="openarmx_left_link0_visual">
@@ -276,7 +281,7 @@
   <joint name="openarmx_right_openarmx_body_link0_joint" type="fixed">
     <parent link="openarmx_body_link0"/>
     <child link="openarmx_right_link0"/>
-    <origin rpy="1.5708 0 0" xyz="0.0 -0.031 0.698"/>
+    <origin rpy="1.5708 0 0" xyz="0.0 -0.031 0.735"/>
   </joint>
   <link name="openarmx_right_link0">
     <visual name="openarmx_right_link0_visual">
