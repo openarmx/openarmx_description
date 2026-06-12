@@ -31,8 +31,7 @@
       <collision name="${prefix}${name}_collision">
         <xacro:openarmx-body-kinematics config="${kinematics_link}" name="${name}" />
         <geometry>
-          <mesh filename="package://openarmx_description/meshes/body/${body_type}/collision/${name}_symp.stl" scale="1.0 1.0 1.0" />
-          <!-- <mesh filename="package://openarmx_description/meshes/arm/${arm_type}/collision/${name}.stl" scale="0.001 0.001 0.001" /> -->
+          <mesh filename="package://openarmx_description/meshes/body/${body_type}/collision/${name}_symp.stl" scale="0.001 0.001 0.001" />
         </geometry>
       </collision>
       <xacro:openarmx-body-inertials name="${name}" />
