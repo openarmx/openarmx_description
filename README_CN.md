@@ -96,7 +96,7 @@ openarmx_description/
 cd ~/openarmx_ws/src
 
 # 克隆仓库
-git clone https://github.com/openarmx-arm/openarmx_description.git
+git clone https://github.com/openarmx/openarmx_description.git
 
 # 构建包
 colcon build --packages-select openarmx_description

@@ -96,7 +96,7 @@ openarmx_description/
 cd ~/openarmx_ws/src
 
 # Clone the repository
-git clone https://github.com/openarmx-arm/openarmx_description.git
+git clone https://github.com/openarmx/openarmx_description.git
 
 # Build the package
 colcon build --packages-select openarmx_description
