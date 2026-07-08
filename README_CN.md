@@ -27,7 +27,7 @@ OpenArmX 机器人平台的完整 URDF 描述包，为 ROS 2 仿真和控制提�
 openarmx_description/
 ├── CMakeLists.txt              # CMake 构建配置
 ├── package.xml                 # ROS 2 包清单
-├── LICENSE                     # Apache 2.0 许可证
+├── LICENSE                     # CC BY-NC-SA 4.0 许可证
 ├── config/                     # 机器人参数配置
 │   ├── arm/                    # 机械臂特定参数
 │   │   └── v10/                # v10 机械臂配置文件
@@ -96,7 +96,7 @@ openarmx_description/
 cd ~/openarmx_ws/src
 
 # 克隆仓库
-git clone https://github.com/openarmx-arm/openarmx_description.git
+git clone https://github.com/openarmx/openarmx_description.git
 
 # 构建包
 colcon build --packages-select openarmx_description
@@ -135,7 +135,7 @@ ros2 launch openarmx_description display_openarmx.launch.py arm_type:=v10 bimanu
 
 ```bash
 xacro $(ros2 pkg prefix openarmx_description)/share/openarmx_description/urdf/robot/v10.urdf.xacro \
-    arm_type:=v10 ee_type:=openarmx_hand bimanual:=true > /home/openarmx/openarmx/src/openarmx_description/urdf/robot/openarmx_robot.urdf
+    arm_type:=v10 ee_type:=openarmx_hand bimanual:=true > ~/openarmx_ws/src/openarmx_description/urdf/robot/openarmx_robot.urdf
 ```
 
 ## 支持的机器人配置
@@ -228,7 +228,7 @@ colcon build --packages-select openarmx_description
 
 版权所有 (c) 2026 成都长数机器人有限公司 (Chengdu Changshu Robot Co., Ltd.)
 
-详情请参阅 [LICENSE_CN.md](LICENSE) 文件或访问：http://creativecommons.org/licenses/by-nc-sa/4.0/
+详情请参阅 [LICENSE](LICENSE) 文件或访问：http://creativecommons.org/licenses/by-nc-sa/4.0/
 
 ## 作者
 

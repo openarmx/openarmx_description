@@ -27,7 +27,7 @@ The `openarmx_description` package contains URDF (Unified Robot Description Form
 openarmx_description/
 ├── CMakeLists.txt              # CMake build configuration
 ├── package.xml                 # ROS 2 package manifest
-├── LICENSE                     # Apache 2.0 license
+├── LICENSE                     # CC BY-NC-SA 4.0 license
 ├── config/                     # Robot parameter configurations
 │   ├── arm/                    # Arm-specific parameters
 │   │   └── v10/                # v10 arm configuration files
@@ -84,7 +84,7 @@ openarmx_description/
 ### Prerequisites
 
 - ROS 2 (Humble or later)
-- Python 3.8+
+- Python 3.10+
 - `xacro` package
 - `joint_state_publisher_gui` package
 - `rviz2` package
@@ -96,7 +96,7 @@ openarmx_description/
 cd ~/openarmx_ws/src
 
 # Clone the repository
-git clone https://github.com/openarmx-arm/openarmx_description.git
+git clone https://github.com/openarmx/openarmx_description.git
 
 # Build the package
 colcon build --packages-select openarmx_description
@@ -135,7 +135,7 @@ To convert xacro files to URDF for inspection:
 
 ```bash
 xacro $(ros2 pkg prefix openarmx_description)/share/openarmx_description/urdf/robot/v10.urdf.xacro \
-    arm_type:=v10 ee_type:=openarmx_hand bimanual:=true > robot_bimanual.urdf
+    arm_type:=v10 ee_type:=openarmx_hand bimanual:=true > ~/openarmx_ws/src/openarmx_description/urdf/robot/openarmx_robot.urdf
 ```
 
 ## Supported Robot Configurations
