@@ -135,7 +135,7 @@ To convert xacro files to URDF for inspection:
 
 ```bash
 xacro $(ros2 pkg prefix openarmx_description)/share/openarmx_description/urdf/robot/v10.urdf.xacro \
-    arm_type:=v10 ee_type:=openarmx_hand bimanual:=true > robot_bimanual.urdf
+    arm_type:=v10 ee_type:=openarmx_hand bimanual:=true > ~/openarmx_ws/src/openarmx_description/urdf/robot/openarmx_robot.urdf
 ```
 
 ## Supported Robot Configurations

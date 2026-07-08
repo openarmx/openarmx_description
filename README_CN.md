@@ -135,7 +135,7 @@ ros2 launch openarmx_description display_openarmx.launch.py arm_type:=v10 bimanu
 
 ```bash
 xacro $(ros2 pkg prefix openarmx_description)/share/openarmx_description/urdf/robot/v10.urdf.xacro \
-    arm_type:=v10 ee_type:=openarmx_hand bimanual:=true > /home/openarmx/openarmx/src/openarmx_description/urdf/robot/openarmx_robot.urdf
+    arm_type:=v10 ee_type:=openarmx_hand bimanual:=true > ~/openarmx_ws/src/openarmx_description/urdf/robot/openarmx_robot.urdf
 ```
 
 ## 支持的机器人配置
