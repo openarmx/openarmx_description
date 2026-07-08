@@ -84,7 +84,7 @@ openarmx_description/
 ### Prerequisites
 
 - ROS 2 (Humble or later)
-- Python 3.8+
+- Python 3.10+
 - `xacro` package
 - `joint_state_publisher_gui` package
 - `rviz2` package
