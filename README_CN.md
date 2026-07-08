@@ -27,7 +27,7 @@ OpenArmX 机器人平台的完整 URDF 描述包，为 ROS 2 仿真和控制提�
 openarmx_description/
 ├── CMakeLists.txt              # CMake 构建配置
 ├── package.xml                 # ROS 2 包清单
-├── LICENSE                     # Apache 2.0 许可证
+├── LICENSE                     # CC BY-NC-SA 4.0 许可证
 ├── config/                     # 机器人参数配置
 │   ├── arm/                    # 机械臂特定参数
 │   │   └── v10/                # v10 机械臂配置文件

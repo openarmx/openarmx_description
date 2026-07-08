@@ -27,7 +27,7 @@ The `openarmx_description` package contains URDF (Unified Robot Description Form
 openarmx_description/
 ├── CMakeLists.txt              # CMake build configuration
 ├── package.xml                 # ROS 2 package manifest
-├── LICENSE                     # Apache 2.0 license
+├── LICENSE                     # CC BY-NC-SA 4.0 license
 ├── config/                     # Robot parameter configurations
 │   ├── arm/                    # Arm-specific parameters
 │   │   └── v10/                # v10 arm configuration files
